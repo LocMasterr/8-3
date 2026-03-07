@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8/3 - 12A3</title>
+    
+    <!-- Meta Tags for SEO & Social Sharing -->
+    <meta name="description" content="Chúc mừng ngày Quốc tế Phụ nữ 8/3 - Đặc biệt tặng 12A3">
+    <meta name="keywords" content="8/3, women's day, 12A3, lời chúc">
+    <meta property="og:title" content="Happy 8/3 - 12A3">
+    <meta property="og:description" content="Chúc mừng ngày Quốc tế Phụ nữ!">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+    
+    <!-- Link file CSS -->
+    <link rel="stylesheet" href="test.css">
+    
+    <!-- Font chữ đẹp -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="LAB.jpg" as="image">
+    
+    <!-- Thư viện pháo giấy -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js" defer></script>
+    <audio id = "bgMusic" autoplay loop playsinline>
+        <source src = "music.mp3" type = "audio/mp3">
+    </audio>
+    <script>
+        const audio = document.getElementById("bgMusic");
+        audio.muted = false;
+        audio.volume = 0.5;
+    </script>
+</head>
+<body>
+    <!-- Nền động -->
+    <div class="background-shapes" aria-hidden="true">
+        <div class="shape" style="width: 100px; height: 100px; left: 10%; animation-duration: 15s;"></div>
+        <div class="shape" style="width: 60px; height: 60px; left: 30%; animation-duration: 20s;"></div>
+        <div class="shape" style="width: 120px; height: 120px; left: 70%; animation-duration: 18s;"></div>
+        <div class="shape" style="width: 80px; height: 80px; left: 90%; animation-duration: 25s;"></div>
+        <div class="shape" style="width: 50px; height: 50px; left: 50%; animation-duration: 22s;"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <span class="flower-icon" aria-hidden="true">🌸</span>
+            <h1>Happy 8/3</h1>
+            <p class="subtitle">CHÚC MỪNG NGÀY QUỐC TẾ PHỤ NỮ</p>
+            <p class="class-name">ĐẶC BIỆT TẶNG 12A3</p>
+        </header>
+
+        <!-- Lời chúc chính -->
+        <div class="glass-card">
+            <h2>🌸 Lời Chúc Vàng 🌸</h2>
+            <div class="typing-text" id="typing-text" aria-label="Lời chúc"></div>
+        </div>
+
+        <!-- Các lời chúc vui -->
+        <div class="glass-card">
+            <h2>🎁 Quà Tặng Tinh Thần 🎁</h2>
+            <div class="wishes-grid">
+                <div class="wish-card">
+                    <span class="wish-icon" aria-hidden="true">💄</span>
+                    <span class="wish-title">Chúc Xinh Đẹp</span>
+                    <p>Luôn rạng rỡ, xinh đẹp và được mọi người yêu quý.</p>
+                </div>
+                <div class="wish-card">
+                    <span class="wish-icon" aria-hidden="true">📚</span>
+                    <span class="wish-title">Chúc Học Tốt</span>
+                    <p>Điểm số cao, thi cử đỗ đạt, không bị điểm kém.</p>
+                </div>
+                <div class="wish-card">
+                    <span class="wish-icon" aria-hidden="true">💰</span>
+                    <span class="wish-title">Chúc Giàu Có</span>
+                    <p>Tiền tiêu không hết, mua sắm thoải mái.</p>
+                </div>
+                <div class="wish-card">
+                    <span class="wish-icon" aria-hidden="true">🎉</span>
+                    <span class="wish-title">Chúc Vui Vẻ</span>
+                    <p>Luôn cười tươi, không lo âu, sống hết mình.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gallery Ảnh -->
+        <div class="glass-card">
+            <h2>📸 16 Cô Gái 12A3 📸</h2>
+            <p class="gallery-hint">Bấm nút bên dưới để mở khóa toàn bộ ảnh!</p>
+            
+            <div class="gallery-container" id="photo-gallery" role="list">
+                <img src="1.jpg" class="gallery-item" style="--i:1" alt="Bạn nữ 1 - 12A3" loading="lazy">
+                <img src="2.jpg" class="gallery-item" style="--i:2" alt="Bạn nữ 2 - 12A3" loading="lazy">
+                <img src="3.png" class="gallery-item" style="--i:3" alt="Bạn nữ 3 - 12A3" loading="lazy">
+                <img src="4.jpg" class="gallery-item" style="--i:4" alt="Bạn nữ 4 - 12A3" loading="lazy">
+                <img src="5.jpg" class="gallery-item" style="--i:5" alt="Bạn nữ 5 - 12A3" loading="lazy">
+                <img src="6.jpg" class="gallery-item" style="--i:6" alt="Bạn nữ 6 - 12A3" loading="lazy">
+                <img src="7.jpg" class="gallery-item" style="--i:7" alt="Bạn nữ 7 - 12A3" loading="lazy">
+                <img src="8.jpg" class="gallery-item" style="--i:8" alt="Bạn nữ 8 - 12A3" loading="lazy">
+                <img src="9.jpg" class="gallery-item" style="--i:9" alt="Bạn nữ 9 - 12A3" loading="lazy">
+                <img src="10.jpg" class="gallery-item" style="--i:10" alt="Bạn nữ 10 - 12A3" loading="lazy">
+                <img src="11.jpg" class="gallery-item" style="--i:11" alt="Bạn nữ 11 - 12A3" loading="lazy">
+                <img src="12.png" class="gallery-item" style="--i:12" alt="Bạn nữ 12 - 12A3" loading="lazy">
+                <img src="13.jpg" class="gallery-item" style="--i:13" alt="Bạn nữ 13 - 12A3" loading="lazy">
+                <img src="14.jpg" class="gallery-item" style="--i:14" alt="Bạn nữ 14 - 12A3" loading="lazy">
+                <img src="15.jpg" class="gallery-item" style="--i:15" alt="Bạn nữ 15 - 12A3" loading="lazy">
+                <img src="16.jpg" class="gallery-item" style="--i:16" alt="Bạn nữ 16 - 12A3" loading="lazy">
+            </div>
+        </div>
+
+        <!-- Nhạc nền -->
+        <div class="glass-card">
+            <h2>🎶 Music (On Top) 🎶</h2>
+            <div class="music-player">
+                <button class="play-btn" onclick="toggleMusic()" aria-label="Phát/Dừng nhạc">
+                    <span class="play-icon">⏸</span>
+                </button>
+                <div class="song-info">
+                    <div class="song-title">Phép Màu (Piano Cover)</div>
+                    <div class="song-artist">12A3 Class Mix</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nút bí mật -->
+        <button class="action-btn" onclick="revealPhotos()" aria-label="Mở khóa ảnh">
+            🎉 BẤM ĐỂ NHẬN QUÀ 🎉
+        </button>
+
+        <footer>
+            <p>Created with ❤️ by 12A3</p>
+            <p>Frontend: Đế Chế Mất Não - LocMaster</p>
+            <p>Backend: Đế Chế Mất Não - LocMaster</p>
+        </footer>
+    </div>
+
+    <!-- Modal xem ảnh -->
+    <div class="modal" id="imageModal" role="dialog" aria-modal="true" aria-label="Xem ảnh lớn">
+        <button class="modal-close" onclick="closeModal()" aria-label="Đóng">&times;</button>
+        <img class="modal-content" id="modalImage" alt="Ảnh lớn">
+        <div class="modal-caption" id="modalCaption"></div>
+        <button class="modal-nav modal-prev" onclick="navigateImage(-1)" aria-label="Ảnh trước">❮</button>
+        <button class="modal-nav modal-next" onclick="navigateImage(1)" aria-label="Ảnh sau">❯</button>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Biến toàn cục
+        let currentImageIndex = 0;
+        const galleryImages = [];
+        
+        // Thu thập tất cả ảnh trong gallery sau khi DOM load
+        document.addEventListener('DOMContentLoaded', function() {
+            initGallery();
+            startCountdown();
+            typeWriter();
+        });
+
+        // Khởi tạo gallery
+        function initGallery() {
+            const items = document.querySelectorAll('.gallery-item');
+            items.forEach((img, index) => {
+                galleryImages.push({
+                    src: img.src,
+                    alt: img.alt
+                });
+                img.addEventListener('click', () => openModal(index));
+            });
+        }
+
+        const textElement = document.getElementById('typing-text');
+        const textToType = "Chúc các bạn nữ 12A3 luôn xinh đẹp, hạnh phúc và thành công trong học tập. Chúc các bạn có một ngày 8/3 thật ý nghĩa!";
+        let charIndex = 0;
+
+        function typeWriter() {
+            if (charIndex < textToType.length) {
+                textElement.innerHTML += textToType.charAt(charIndex);
+                charIndex++;
+                setTimeout(typeWriter, 50);
+            }
+        }
+
+        // Hiệu ứng pháo giấy khi load trang
+        window.addEventListener('load', function() {
+            // Pháo giấy nhẹ nhàng
+            confetti({
+                particleCount: 80,
+                spread: 70,
+                origin: { y: 0.6 },
+                colors: ['#ff7eb3', '#ff758c', '#a18cd1', '#fbc2eb']
+            });
+        });
+
+        // Hiệu ứng hiện ảnh
+        function revealPhotos() {
+            const gallery = document.getElementById('photo-gallery');
+            const btn = document.querySelector('.action-btn');
+            const hint = document.querySelector('.gallery-hint');
+            
+            gallery.classList.add('revealed');
+            
+            if (hint) hint.style.display = 'none';
+            
+            btn.innerHTML = "Đã mở khóa! 🎉";
+            btn.classList.add('revealed-btn');
+            
+            // Pháo giấy lần 2
+            confetti({
+                particleCount: 150,
+                spread: 100,
+                origin: { y: 0.6 },
+                colors: ['#ff7eb3', '#ff758c', '#a18cd1', '#fbc2eb', '#ff9a9e']
+            });
+        }
+
+        // Hiệu ứng nhạc
+        function toggleMusic() {
+            const music = document.getElementById('bgMusic');
+            const newMusic = document.getElementById('new-music'); // Bài nhạc mới
+            const btn = document.querySelector('.play-btn');
+            const icon = btn.querySelector('.play-icon');
+            
+            if (music.paused) {
+                music.play().catch(e => console.log('Cần tương tác để phát nhạc'));
+                icon.textContent = '⏸';
+            } else {
+                music.pause();
+                icon.textContent = '▶';
+            }
+        }
+
+        // Modal functions
+        function openModal(index) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            const caption = document.getElementById('modalCaption');
+            
+            currentImageIndex = index;
+            modalImg.src = galleryImages[index].src;
+            caption.textContent = galleryImages[index].alt;
+            
+            modal.classList.add('show');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.classList.remove('show');
+            document.body.style.overflow = 'auto';
+        }
+
+        function navigateImage(direction) {
+            currentImageIndex += direction;
+            if (currentImageIndex < 0) currentImageIndex = galleryImages.length - 1;
+            if (currentImageIndex >= galleryImages.length) currentImageIndex = 0;
+            
+            const modalImg = document.getElementById('modalImage');
+            const caption = document.getElementById('modalCaption');
+            
+            modalImg.style.opacity = '0';
+            setTimeout(() => {
+                modalImg.src = galleryImages[currentImageIndex].src;
+                caption.textContent = galleryImages[currentImageIndex].alt;
+                modalImg.style.opacity = '1';
+            }, 200);
+        }
+
+        // Đóng modal khi click ngoài
+        document.getElementById('imageModal').addEventListener('click', function(e) {
+            if (e.target === this) closeModal();
+        });
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            initGallery(); // Để thư viện ảnh hoạt động
+            typeWriter();  // Kích hoạt lời chúc hiện ra ngay khi load trang
+        });
+
+    </script>
+</body>
+</html>
+
