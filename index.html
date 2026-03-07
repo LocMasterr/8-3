@@ -116,10 +116,10 @@
             <h2>🎶 Music (On Top) 🎶</h2>
             <div class="music-player">
                 <button class="play-btn" onclick="toggleMusic()" aria-label="Phát/Dừng nhạc">
-                    <span class="play-icon">⏸</span>
+                    <span class="play-icon">▶</span>
                 </button>
                 <div class="song-info">
-                    <div class="song-title">Phép Màu (Piano Cover)</div>
+                    <div class="song-title">Happy Women's Day</div>
                     <div class="song-artist">12A3 Class Mix</div>
                 </div>
             </div>
@@ -196,6 +196,9 @@
 
         // Hiệu ứng hiện ảnh
         function revealPhotos() {
+            // Kích hoạt nhạc khi người dùng tương tác
+            const music = document.getElementById('bgMusic');
+            music.play().catch(e => console.log("Chờ tương tác để phát nhạc"));
             const gallery = document.getElementById('photo-gallery');
             const btn = document.querySelector('.action-btn');
             const hint = document.querySelector('.gallery-hint');
